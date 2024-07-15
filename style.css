@@ -1,0 +1,135 @@
+@keyframes rotate {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(180deg);
+  }
+}
+:root {
+  font-family: "Inter", sans-serif;
+  font-size: 62.5%;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+button {
+  all: unset;
+}
+
+body {
+  font-size: 1.6rem;
+  height: 100vh;
+  background-image: radial-gradient(ellipse, #385300, #212900);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.counter {
+  background-color: #bef227;
+  width: 47.6rem;
+  height: 61.5rem;
+  border-radius: 1rem;
+  box-shadow: 0 2.5rem 12.1rem rgba(0, 0, 0, 0.5);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  transition: all 0.4s;
+  transition: all 0.4s;
+}
+.counter--limit {
+  background-color: #a3d11b;
+}
+.counter__title {
+  opacity: 0.6;
+  text-transform: uppercase;
+  letter-spacing: 0.1rem;
+  width: 20rem;
+  text-align: center;
+  line-height: 0.9;
+  font-weight: 500;
+  font-size: 3.2rem;
+  margin-top: 6rem;
+  transition: all 0.4s;
+}
+@media (max-width: 68em) {
+  .counter__title {
+    margin-top: 10rem;
+  }
+}
+.counter__value {
+  color: #1d2507;
+  font-size: 20rem;
+  font-weight: 600;
+  margin-top: 1rem;
+}
+.counter__reset-button {
+  cursor: pointer;
+}
+.counter__reset-icon {
+  opacity: 0.3;
+  font-size: 3.5rem;
+  transition: opacity 0.4s;
+}
+.counter__reset-icon:hover {
+  opacity: 0.5;
+}
+.counter__reset-icon:active {
+  animation: rotate 0.2s backwards;
+}
+.counter__buttons {
+  background-color: #1d2507;
+  height: 11.6rem;
+  width: 100%;
+  margin-top: auto;
+  border-bottom-right-radius: 1rem;
+  border-bottom-left-radius: 1rem;
+  display: flex;
+  transition: all 0.4s;
+}
+@media (max-width: 68em) {
+  .counter__buttons {
+    border-bottom-left-radius: 0;
+    border-bottom-right-radius: 0;
+  }
+}
+.counter__button {
+  flex: 1;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+  transition: all 0.4s;
+}
+.counter__button:hover {
+  background-color: #212b06;
+  border-bottom-right-radius: 1rem;
+  border-bottom-left-radius: 1rem;
+}
+.counter__button:active .counter__icon {
+  transform: scale(0.9);
+}
+.counter__button--decrease {
+  border-right: 0.05rem solid rgba(189, 254, 0, 0.15);
+}
+.counter__button--increase {
+  border-left: 0.05rem solid rgba(189, 254, 0, 0.15);
+}
+.counter__icon {
+  color: #bdfe00;
+  opacity: 0.9;
+  font-size: 4rem;
+  transition: all 0.1s;
+}
+@media (max-width: 68em) or (max-height: 73rem) {
+  .counter {
+    width: 100%;
+    height: 100%;
+    border-radius: 0;
+  }
+}/*# sourceMappingURL=style.css.map */
