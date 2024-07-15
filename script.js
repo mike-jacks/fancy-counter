@@ -60,6 +60,12 @@ function handleKeyPressDecrease(e) {
   }
 }
 
+function handleKeyPressReset(e) {
+  if (e.key === "r" || e.key === "R") {
+    handleResetCounter();
+  }
+}
+
 increaseButtonEl.addEventListener("click", handleIncrementCounter);
 
 decreaseButtonEl.addEventListener("click", handleDecrementCounter);
@@ -69,3 +75,5 @@ resetButtonEl.addEventListener("click", handleResetCounter);
 document.addEventListener("keydown", handleKeyPressIncrease);
 
 document.addEventListener("keydown", handleKeyPressDecrease);
+
+document.addEventListener("keypress", handleKeyPressReset);
