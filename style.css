@@ -126,6 +126,12 @@ body {
   font-size: 4rem;
   transition: all 0.1s;
 }
+.counter__icon--minus {
+  visibility: inherit;
+}
+.counter__icon--plus {
+  visibility: inherit;
+}
 @media (max-width: 68em) or (max-height: 73rem) {
   .counter {
     width: 100%;
